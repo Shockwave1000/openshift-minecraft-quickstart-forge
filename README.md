@@ -1,4 +1,4 @@
-This is a OpenShift quickstart to run a Minecraft Server. It was based on [this blog post](https://www.openshift.com/blogs/paas-free-minecraft-server-hosting).
+This is a OpenShift quickstart to run a Minecraft Forge Server. It was based on [this blog post](https://www.openshift.com/blogs/paas-free-minecraft-server-hosting).
 
 Creating the app
 ===
@@ -31,3 +31,5 @@ Press CTRL-C to terminate port forwarding
 Note: If you are running Windows, the easiest way to install `rhc` is using this [binary installer](https://github.com/getupcloud/openshift-rhc-installer/releases).
 
 Now you need only to configure your minecraft client to connect to local IP:PORT (`127.0.0.1:25565` on this example).
+
+Make sure you have put in your forge mods on client and server, then restart the server.
