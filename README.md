@@ -2,10 +2,10 @@ This is a OpenShift quickstart to run a Minecraft Server. It was based on [this 
 
 Creating the app
 ===
-WARNING: You must use 3 gears or change the start command to your liking.
+
 First you need to create a DIY application using this repo as source code:
 
-If prefered this can also be done in the OpenShift website.
+If prefered this can also be done in the openshift website
 
 ```bash
 $ rhc app-create minecraft diy-0.1 --from-code=git://github.com/Shockwave1000/openshift-minecraft-quickstart-updated.git
