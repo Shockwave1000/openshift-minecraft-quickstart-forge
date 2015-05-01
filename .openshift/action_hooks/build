@@ -1,12 +1,12 @@
 #!/bin/bash
 
 SERVER_PROPERTIES=server.properties
-MINECRAFT_SERVER_JAR=minecraft_server.jar
+MINECRAFT_SERVER_JAR=forge-1.8-11.14.1.1397-universal.jar
 
 cd $OPENSHIFT_DATA_DIR
 
 if [ ! -e $MINECRAFT_SERVER_JAR ]; then
-   wget https://s3.amazonaws.com/MinecraftDownload/launcher/minecraft_server.jar -O $MINECRAFT_SERVER_JAR
+   wget http://files.minecraftforge.net/maven/net/minecraftforge/forge/1.8-11.14.1.1397/forge-1.8-11.14.1.1397-universal.jar -O $MINECRAFT_SERVER_JAR
 fi
 
 if [ ! -e "$SERVER_PROPERTIES" ]; then
