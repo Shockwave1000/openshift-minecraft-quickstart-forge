@@ -2,6 +2,9 @@
 # The logic to start up your application should be put in this
 # script. The application will work only if it binds to
 # $OPENSHIFT_DIY_IP:8080
+# This script's ram parameters have been changed 
+# to use the full functionality of 3 small OpenShift gears.
+# You can adjust to smaller gears but I don't advise this.
 
 cd $OPENSHIFT_DATA_DIR
-nohup bash -c "exec 'java' '-jar' 'minecraft_server.jar' '-Xms256M' '-Xmx490M' '-nogui' &> ${OPENSHIFT_DIY_LOG_DIR}minecraft.log" &> /dev/null &
+nohup bash -c "exec 'java' '-jar' 'minecraft_server.jar' '-Xms1024M' '-Xmx1536M' '-nogui' &> ${OPENSHIFT_DIY_LOG_DIR}minecraft.log" &> /dev/null &
